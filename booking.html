@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a consultation with Dr. Lisa Samir - Nutrition Coach & Dietitian. Start your health transformation today with personalized nutrition coaching.">
+    <title>Book Consultation | Dr. Lisa Samir - Nutrition Coach & Dietitian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+201234567890" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-dr">Dr.</span> Lisa Samir
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="booking.html" class="nav-link nav-cta active">Book Now</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-badge">Book Now</span>
+            <h1 class="page-hero-title">Start Your Health Transformation</h1>
+            <p class="page-hero-subtitle">Take the first step towards a healthier you. Fill out the form below and I'll get back to you within 24 hours.</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-grid">
+                <!-- Booking Form -->
+                <div class="booking-form-wrapper">
+                    <div class="booking-form-card glass-card">
+                        <h2><i class="fas fa-calendar-check"></i> Consultation Booking Form</h2>
+                        <p class="form-intro">Tell me about yourself and your health goals so I can prepare the best consultation experience for you.</p>
+                        
+                        <form class="booking-form" id="bookingForm">
+                            <!-- Step 1: Personal Info -->
+                            <div class="form-step active" data-step="1">
+                                <h3 class="step-title"><span class="step-number">1</span> Personal Information</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name *</label>
+                                        <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name *</label>
+                                        <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone / WhatsApp *</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="+20 1XX XXX XXXX" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="age">Age</label>
+                                        <input type="number" id="age" name="age" placeholder="Your age" min="16" max="99">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="gender">Gender</label>
+                                        <select id="gender" name="gender">
+                                            <option value="">Select gender</option>
+                                            <option value="female">Female</option>
+                                            <option value="male">Male</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-full step-next">Next: Health Goals <i class="fas fa-arrow-right"></i></button>
+                            </div>
+                            <!-- Step 2: Health Goals -->
+                            <div class="form-step" data-step="2">
+                                <h3 class="step-title"><span class="step-number">2</span> Your Health Goals</h3>
+                                <div class="form-group">
+                                    <label>What are your main health goals? (Select all that apply) *</label>
+                                    <div class="checkbox-grid">
+                                        <label class="checkbox-card">
+                                            <input type="checkbox" name="goals" value="weight-loss">
+                                            <span class="checkbox-label"><i class="fas fa-weight-scale"></i> Weight Loss</span>
+                                        </label>
+                                        <label class="checkbox-card">
+                                            <input type="checkbox" name="goals" value="fat-loss">
+                                            <span class="checkbox-label"><i class="fas fa-fire"></i> Fat Loss</span>
+                                        </label>
+                                        <label class="checkbox-card">
+                                            <input type="checkbox" name="goals" value="meal-plan">
+                                            <span class="checkbox-label"><i class="fas fa-utensils"></i> Meal Planning</span>
+                                        </label>
+                                        <label class="checkbox-card">
+                                            <input type="checkbox" name="goals" value="pcos">
+                                            <span class="checkbox-label"><i class="fas fa-venus"></i> PCOS Management</span>
+                                        </label>
+                                        <label class="checkbox-card">
+                                            <input type="checkbox" name="goals" value="gut-health">
+                                            <span class="checkbox-label"><i class="fas fa-heart"></i> Gut Health</span>
+                                        </label>
+                                        <label class="checkbox-card">
+                                            <input type="checkbox" name="goals" value="lifestyle">
+                                            <span class="checkbox-label"><i class="fas fa-leaf"></i> Healthy Lifestyle</span>
+                                        </label>
+                                        <label class="checkbox-card">
+                                            <input type="checkbox" name="goals" value="energy">
+                                            <span class="checkbox-label"><i class="fas fa-bolt"></i> More Energy</span>
+                                        </label>
+                                        <label class="checkbox-card">
+                                            <input type="checkbox" name="goals" value="other">
+                                            <span class="checkbox-label"><i class="fas fa-plus"></i> Other</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="currentWeight">Current Weight (kg)</label>
+                                    <input type="number" id="currentWeight" name="currentWeight" placeholder="e.g. 80">
+                                </div>
+                                <div class="form-group">
+                                    <label for="targetWeight">Target Weight (kg)</label>
+                                    <input type="number" id="targetWeight" name="targetWeight" placeholder="e.g. 65">
+                                </div>
+                                <div class="form-group">
+                                    <label for="previousDiets">Have you tried any diets before? Tell me about your experience.</label>
+                                    <textarea id="previousDiets" name="previousDiets" rows="3" placeholder="E.g., I tried keto for 2 months but couldn't maintain it..."></textarea>
+                                </div>
+                                <div class="form-buttons">
+                                    <button type="button" class="btn btn-outline step-prev"><i class="fas fa-arrow-left"></i> Back</button>
+                                    <button type="button" class="btn btn-primary step-next">Next: Preferences <i class="fas fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Preferences -->
+                            <div class="form-step" data-step="3">
+                                <h3 class="step-title"><span class="step-number">3</span> Consultation Preferences</h3>
+                                <div class="form-group">
+                                    <label for="service">Which service are you interested in? *</label>
+                                    <select id="service" name="service" required>
+                                        <option value="">Select a service</option>
+                                        <option value="single-consultation">Single Consultation (EGP 800)</option>
+                                        <option value="monthly-coaching">Monthly Coaching (EGP 2,500/mo)</option>
+                                        <option value="3-month-program">3-Month Program (EGP 6,000)</option>
+                                        <option value="meal-plan">Personalized Meal Plan (EGP 2,000)</option>
+                                        <option value="fat-loss">Fat Loss Program (EGP 2,500)</option>
+                                        <option value="not-sure">Not sure - need guidance</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Preferred Communication Method *</label>
+                                    <div class="radio-group">
+                                        <label class="radio-card">
+                                            <input type="radio" name="communication" value="video" required>
+                                            <span class="radio-label"><i class="fas fa-video"></i> Video Call</span>
+                                        </label>
+                                        <label class="radio-card">
+                                            <input type="radio" name="communication" value="whatsapp">
+                                            <span class="radio-label"><i class="fab fa-whatsapp"></i> WhatsApp</span>
+                                        </label>
+                                        <label class="radio-card">
+                                            <input type="radio" name="communication" value="in-person">
+                                            <span class="radio-label"><i class="fas fa-user"></i> In Person</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferredDate">Preferred Date</label>
+                                    <input type="date" id="preferredDate" name="preferredDate">
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferredTime">Preferred Time</label>
+                                    <select id="preferredTime" name="preferredTime">
+                                        <option value="">Select preferred time</option>
+                                        <option value="morning">Morning (9 AM - 12 PM)</option>
+                                        <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                                        <option value="evening">Evening (4 PM - 8 PM)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="additionalNotes">Additional Notes</label>
+                                    <textarea id="additionalNotes" name="additionalNotes" rows="3" placeholder="Any medical conditions, allergies, or special requirements..."></textarea>
+                                </div>
+                                <div class="form-buttons">
+                                    <button type="button" class="btn btn-outline step-prev"><i class="fas fa-arrow-left"></i> Back</button>
+                                    <button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Submit Booking Request</button>
+                                </div>
+                            </div>
+
+                            <!-- Success Message -->
+                            <div class="form-success" id="formSuccess" style="display: none;">
+                                <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+                                <h3>Booking Request Submitted!</h3>
+                                <p>Thank you! I'll review your information and get back to you within 24 hours to confirm your consultation time.</p>
+                                <p>For urgent inquiries, feel free to reach out on WhatsApp:</p>
+                                <a href="https://wa.me/+201234567890" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Progress Indicator -->
+                    <div class="form-progress">
+                        <div class="progress-step active" data-step="1">
+                            <span class="progress-dot"></span>
+                            <span class="progress-label">Personal Info</span>
+                        </div>
+                        <div class="progress-step" data-step="2">
+                            <span class="progress-dot"></span>
+                            <span class="progress-label">Health Goals</span>
+                        </div>
+                        <div class="progress-step" data-step="3">
+                            <span class="progress-dot"></span>
+                            <span class="progress-label">Preferences</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Booking Sidebar -->
+                <div class="booking-sidebar">
+                    <div class="sidebar-card glass-card">
+                        <h3><i class="fas fa-info-circle"></i> What to Expect</h3>
+                        <div class="expect-list">
+                            <div class="expect-item">
+                                <div class="expect-icon"><span>1</span></div>
+                                <div class="expect-text">
+                                    <h4>Submit Your Form</h4>
+                                    <p>Fill out the booking form with your details and health goals.</p>
+                                </div>
+                            </div>
+                            <div class="expect-item">
+                                <div class="expect-icon"><span>2</span></div>
+                                <div class="expect-text">
+                                    <h4>Confirmation</h4>
+                                    <p>I'll confirm your appointment within 24 hours via WhatsApp or email.</p>
+                                </div>
+                            </div>
+                            <div class="expect-item">
+                                <div class="expect-icon"><span>3</span></div>
+                                <div class="expect-text">
+                                    <h4>Consultation</h4>
+                                    <p>We'll have a thorough discussion about your goals and create your plan.</p>
+                                </div>
+                            </div>
+                            <div class="expect-item">
+                                <div class="expect-icon"><span>4</span></div>
+                                <div class="expect-text">
+                                    <h4>Your Custom Plan</h4>
+                                    <p>Receive your personalized nutrition plan within 48 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card glass-card">
+                        <h3><i class="fas fa-shield-alt"></i> Quick Contact</h3>
+                        <p>Prefer to book directly? Reach out via:</p>
+                        <div class="quick-contact-links">
+                            <a href="https://wa.me/+201234567890" class="quick-contact-item" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp: +20 123 456 7890</span>
+                            </a>
+                            <a href="mailto:hello@drlisasamir.com" class="quick-contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>hello@drlisasamir.com</span>
+                            </a>
+                            <a href="https://instagram.com" class="quick-contact-item" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                <span>@drlisasamir</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card glass-card">
+                        <h3><i class="fas fa-star"></i> Client Love</h3>
+                        <div class="sidebar-testimonial">
+                            <p>"Booking was so easy and Dr. Lisa responded the same day! The consultation was thorough and I felt heard. Best decision I made for my health."</p>
+                            <span class="sidebar-testimonial-author">- Yasmin M.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Info Section -->
+    <section class="payment-info">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Payment</span>
+                <h2 class="section-title">Payment Options</h2>
+                <p class="section-subtitle">Flexible payment methods for your convenience.</p>
+            </div>
+            <div class="payment-grid">
+                <div class="payment-card glass-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h4>Credit/Debit Card</h4>
+                    <p>Visa, Mastercard accepted</p>
+                </div>
+                <div class="payment-card glass-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>Vodafone Cash</h4>
+                    <p>Mobile payment accepted</p>
+                </div>
+                <div class="payment-card glass-card">
+                    <i class="fas fa-university"></i>
+                    <h4>Bank Transfer</h4>
+                    <p>Direct bank transfer</p>
+                </div>
+                <div class="payment-card glass-card">
+                    <i class="fab fa-paypal"></i>
+                    <h4>PayPal</h4>
+                    <p>International clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo"><span class="logo-dr">Dr.</span> Lisa Samir</a>
+                    <p>Professional Nutrition Coach & Dietitian helping you achieve healthy weight loss without extreme dieting.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/+201234567890" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:hello@drlisasamir.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Weight Loss Coaching</a></li>
+                        <li><a href="services.html">Meal Plans</a></li>
+                        <li><a href="services.html">Online Consultations</a></li>
+                        <li><a href="services.html">Fat Loss Programs</a></li>
+                        <li><a href="services.html">Lifestyle Coaching</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hello@drlisasamir.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +20 123 456 7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Lisa Samir. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
