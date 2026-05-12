@@ -9,7 +9,7 @@
     <title>Dr. Lisa Samir | Nutrition Coach & Dietitian - Healthy Weight Loss</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Meta Pixel placeholder -->
@@ -23,7 +23,7 @@
 
     <!-- Sticky CTA Mobile -->
     <div class="sticky-cta-mobile">
-        <a href="booking.html" class="btn btn-primary btn-sticky">Book Consultation</a>
+        <a href="booking.html" class="btn btn-primary btn-sticky" data-i18n="sticky_cta">Book Consultation</a>
     </div>
 
     <!-- Navigation -->
@@ -33,12 +33,17 @@
                 <span class="logo-dr">Dr.</span> Lisa Samir
             </a>
             <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="services.html" class="nav-link">Services</a>
-                <a href="blog.html" class="nav-link">Blog</a>
-                <a href="booking.html" class="nav-link nav-cta">Book Now</a>
+                <a href="index.html" class="nav-link active" data-i18n="nav_home">Home</a>
+                <a href="about.html" class="nav-link" data-i18n="nav_about">About</a>
+                <a href="services.html" class="nav-link" data-i18n="nav_services">Services</a>
+                <a href="blog.html" class="nav-link" data-i18n="nav_blog">Blog</a>
+                <a href="booking.html" class="nav-link nav-cta" data-i18n="nav_book">Book Now</a>
             </div>
+            <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+                <span class="lang-option active" data-lang="en">EN</span>
+                <span class="lang-separator">|</span>
+                <span class="lang-option" data-lang="ar">عربي</span>
+            </button>
             <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -58,25 +63,25 @@
         </div>
         <div class="container hero-content">
             <div class="hero-text">
-                <span class="hero-badge">Certified Nutrition Coach & Dietitian</span>
-                <h1 class="hero-title">Healthy Weight Loss <span class="highlight">Without Starving</span> Yourself</h1>
-                <p class="hero-subtitle">Personalized nutrition coaching designed around your body, lifestyle, and goals. No extreme diets. No restrictions. Just results.</p>
+                <span class="hero-badge" data-i18n="hero_badge">Certified Nutrition Coach & Dietitian</span>
+                <h1 class="hero-title" data-i18n="hero_title">Healthy Weight Loss <span class="highlight">Without Starving</span> Yourself</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Personalized nutrition coaching designed around your body, lifestyle, and goals. No extreme diets. No restrictions. Just results.</p>
                 <div class="hero-ctas">
-                    <a href="booking.html" class="btn btn-primary btn-lg">
+                    <a href="booking.html" class="btn btn-primary btn-lg" data-i18n="hero_cta_primary">
                         <i class="fas fa-calendar-check"></i> Book Consultation
                     </a>
-                    <a href="#lead-magnet" class="btn btn-secondary btn-lg">
+                    <a href="#lead-magnet" class="btn btn-secondary btn-lg" data-i18n="hero_cta_secondary">
                         <i class="fas fa-gift"></i> Get Free Nutrition Tips
                     </a>
                 </div>
                 <div class="hero-trust">
                     <div class="trust-item">
                         <i class="fas fa-star"></i>
-                        <span>500+ Happy Clients</span>
+                        <span data-i18n="hero_trust_1">500+ Happy Clients</span>
                     </div>
                     <div class="trust-item">
                         <i class="fas fa-heart"></i>
-                        <span>98% Satisfaction</span>
+                        <span data-i18n="hero_trust_2">98% Satisfaction</span>
                     </div>
                 </div>
             </div>
@@ -139,9 +144,9 @@
     <section class="transformations" id="transformations">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Real Results</span>
-                <h2 class="section-title">Client Transformations</h2>
-                <p class="section-subtitle">Real people, real results. See how personalized nutrition coaching changed their lives.</p>
+                <span class="section-badge" data-i18n="transform_badge">Real Results</span>
+                <h2 class="section-title" data-i18n="transform_title">Client Transformations</h2>
+                <p class="section-subtitle" data-i18n="transform_subtitle">Real people, real results. See how personalized nutrition coaching changed their lives.</p>
             </div>
             <div class="transformations-carousel">
                 <div class="transformation-card glass-card">
@@ -226,9 +231,9 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Our Services</span>
-                <h2 class="section-title">How I Can Help You</h2>
-                <p class="section-subtitle">Personalized nutrition programs designed to fit your lifestyle and help you reach your goals sustainably.</p>
+                <span class="section-badge" data-i18n="services_badge">Our Services</span>
+                <h2 class="section-title" data-i18n="services_title">How I Can Help You</h2>
+                <p class="section-subtitle" data-i18n="services_subtitle">Personalized nutrition programs designed to fit your lifestyle and help you reach your goals sustainably.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card glass-card">
@@ -329,9 +334,9 @@
     <section class="why-choose" id="why-choose">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Why Dr. Lisa</span>
-                <h2 class="section-title">Why Choose Me</h2>
-                <p class="section-subtitle">A different approach to nutrition that actually works for your real life.</p>
+                <span class="section-badge" data-i18n="why_badge">Why Dr. Lisa</span>
+                <h2 class="section-title" data-i18n="why_title">Why Choose Me</h2>
+                <p class="section-subtitle" data-i18n="why_subtitle">A different approach to nutrition that actually works for your real life.</p>
             </div>
             <div class="why-grid">
                 <div class="why-card">
@@ -376,9 +381,9 @@
     <section class="reels-section" id="reels">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge"><i class="fab fa-instagram"></i> Nutrition Tips</span>
-                <h2 class="section-title">Quick Nutrition Tips</h2>
-                <p class="section-subtitle">Follow me for daily tips on healthy eating, weight loss myths, and delicious recipe ideas.</p>
+                <span class="section-badge" data-i18n="reels_badge"><i class="fab fa-instagram"></i> Nutrition Tips</span>
+                <h2 class="section-title" data-i18n="reels_title">Quick Nutrition Tips</h2>
+                <p class="section-subtitle" data-i18n="reels_subtitle">Follow me for daily tips on healthy eating, weight loss myths, and delicious recipe ideas.</p>
             </div>
             <div class="reels-grid">
                 <div class="reel-card">
@@ -442,8 +447,8 @@
         <div class="container">
             <div class="lead-magnet-wrapper glass-card">
                 <div class="lead-magnet-content">
-                    <span class="section-badge">Free Resource</span>
-                    <h2>Free 7-Day Healthy Eating Guide</h2>
+                    <span class="section-badge" data-i18n="lead_badge">Free Resource</span>
+                    <h2 data-i18n="lead_title">Free 7-Day Healthy Eating Guide</h2>
                     <p>Get my proven 7-day meal plan with recipes, shopping lists, and nutrition tips. Start your transformation today - completely free!</p>
                     <ul class="lead-magnet-benefits">
                         <li><i class="fas fa-check-circle"></i> 7 days of balanced meals</li>
@@ -476,9 +481,9 @@
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Testimonials</span>
-                <h2 class="section-title">What My Clients Say</h2>
-                <p class="section-subtitle">Real stories from real people who transformed their health with personalized nutrition coaching.</p>
+                <span class="section-badge" data-i18n="testimonials_badge">Testimonials</span>
+                <h2 class="section-title" data-i18n="testimonials_title">What My Clients Say</h2>
+                <p class="section-subtitle" data-i18n="testimonials_subtitle">Real stories from real people who transformed their health with personalized nutrition coaching.</p>
             </div>
             <div class="testimonials-slider">
                 <div class="testimonial-card glass-card">
@@ -563,9 +568,9 @@
     <section class="faq" id="faq">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">FAQ</span>
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-subtitle">Everything you need to know before starting your nutrition journey.</p>
+                <span class="section-badge" data-i18n="faq_badge">FAQ</span>
+                <h2 class="section-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+                <p class="section-subtitle" data-i18n="faq_subtitle">Everything you need to know before starting your nutrition journey.</p>
             </div>
             <div class="faq-list">
                 <div class="faq-item">
@@ -630,17 +635,17 @@
     <section class="final-cta" id="final-cta">
         <div class="container">
             <div class="cta-content">
-                <h2 class="cta-title">Your Health Transformation Starts Today</h2>
-                <p class="cta-subtitle">You don't need another extreme diet. You need the right strategy designed specifically for your body and lifestyle.</p>
+                <h2 class="cta-title" data-i18n="cta_title">Your Health Transformation Starts Today</h2>
+                <p class="cta-subtitle" data-i18n="cta_subtitle">You don't need another extreme diet. You need the right strategy designed specifically for your body and lifestyle.</p>
                 <div class="cta-buttons">
                     <a href="booking.html" class="btn btn-primary btn-lg">
-                        <i class="fas fa-calendar-check"></i> Book Your Consultation
+                        <span data-i18n="cta_btn_book"><i class="fas fa-calendar-check"></i> Book Your Consultation</span>
                     </a>
                     <a href="https://wa.me/+201234567890" class="btn btn-whatsapp btn-lg" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        <span data-i18n="cta_btn_whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</span>
                     </a>
                 </div>
-                <p class="cta-note">Limited spots available each month. Book now to secure your place.</p>
+                <p class="cta-note" data-i18n="cta_note">Limited spots available each month. Book now to secure your place.</p>
             </div>
         </div>
     </section>
@@ -700,6 +705,8 @@
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
+    <script src="js/lang-switcher.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
